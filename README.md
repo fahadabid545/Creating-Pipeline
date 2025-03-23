@@ -1,18 +1,20 @@
-# Movies EDA Analysis 🎬📊
+# 🌊 Titanic Dataset - Machine Learning Pipeline 🛠️
 
-This repository contains an **Exploratory Data Analysis (EDA)** of a movies dataset, focusing on trends in **popularity, ratings, vote counts, and release patterns** over time.
+## ✨ Project Overview
+This project demonstrates how to build a **Machine Learning Pipeline** for the **Titanic Dataset** using **Decision Tree Classifier**. The pipeline includes:
 
-## 📌 Dataset Overview
-- **Columns:** Title, Release Date, Vote Count, Vote Average, Popularity, Description
-- **Source:** TMDB Top Movies Dataset
+- **Data Preprocessing** (handling missing values, encoding, and scaling)
+- **Feature Selection** using **SelectKBest**
+- **Model Training** with **Decision Tree Classifier**
+- **Pipeline Serialization** using **Pickle**
 
-## 🔍 Key Insights
-- Analyzed movie trends from **1900-2025**.
+## 📊 Data Preprocessing
+- **Handling Missing Values**: `SimpleImputer()`
+- **Encoding Categorical Features**: `OneHotEncoder()`
+- **Feature Scaling**: `MinMaxScaler()`
+- **Feature Selection**: `SelectKBest(score_func=chi2, k=8)`
 
-## 📊 Visualizations
-- **Bar Chart:** Movies released in different eras.
-- **Scatter Plot:** Relationship between **popularity and vote average**.
-- **Pie Chart:** Distribution of movies across time periods.
-- **Heatmap:** Correlation between different numerical features.
-
-
+## 🧠 Model Training
+- **Algorithm**: `DecisionTreeClassifier()`
+- **Pipeline**: Created with `ColumnTransformer` and `Pipeline`
+- **Serialization**: Saved using **Pickle**  
